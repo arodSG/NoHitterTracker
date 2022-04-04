@@ -13,8 +13,7 @@ if __name__ == '__main__':
     output, error = process.communicate()
     
     status = output.strip().decode('UTF-8')
-    status = status if status in ['active', 'inactive'] else '?'
-    location_text = 'Status: ' + status
+    location_text = 'Status: ' + status if status in ['active', 'inactive'] else '?'
     
     try:
         twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
