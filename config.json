@@ -1,0 +1,5 @@
+{
+    "minute_interval_to_update": 3,
+    "num_innings_to_alert": 6.0,
+    "debug_mode": false
+}
