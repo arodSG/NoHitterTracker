@@ -1,7 +1,7 @@
 # NoHitterTracker
-When main.py runs, the list of games for the current day are retrieved. These games are checked/updated every minute_interval_to_update minutes.
+When main.py runs, the list of games for the current day are retrieved. These games are checked/updated every `minute_interval_to_update` minutes.
 
-This script needs to be restarted once daily (can be done via system restart/service or a cron job) so that the next day's games are retrieved. This can be done with a cron job, or with a service file.
+This script needs to be restarted once daily so that the next day's games are retrieved. This can be done with a cron job or with a service file.
 
 ## Config
 - `minute_interval_to_update` - integer
